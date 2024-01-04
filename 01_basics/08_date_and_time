@@ -16,5 +16,22 @@ const BdayWish = `Wish me on ${myBday.toDateString()}`
 console.log(BdayWish)
 
 let myTimeStamp = Date.now()
-console.log(myTimeStamp)
+console.log(myTimeStamp) // in miliseconds
+console.log(Math.floor(myTimeStamp/1000)) // In seconds
+
+let newDate = new Date()
+console.log(newDate)
+console.log(newDate.getDay())
+
+let cusDAte = newDate.toLocaleString('default', {
+    weekday:"long",
+    day:"numeric",
+    year:"2-digit",
+    month:'long'
+}
+)
+
+console.log(cusDAte)
+//
+
 
